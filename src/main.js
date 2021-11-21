@@ -1,4 +1,3 @@
-import './style.css';
 const visualizer = document.querySelector('#visualizer');
 const visualizerCtx = visualizer.getContext('2d');
 let intensity = 0;
