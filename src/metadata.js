@@ -1,5 +1,5 @@
-const apiLink = "http://r-a-d.io/api";
-const djImageApi = "http://r-a-d.io/api/dj-image/";
+const apiLink = "https://r-a-d.io/api";
+const djImageApi = "https://r-a-d.io/api/dj-image/";
 
 const updateTrackInfo = async () => {
     const data = await (await fetch(apiLink)).json();
