@@ -86,7 +86,7 @@ h6 {
     padding: 160px 175px;
 }
 
-#track {
+#track, #songProgress {
     display: flex;
     justify-content: center;
     align-items: center;
