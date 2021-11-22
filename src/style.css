@@ -58,10 +58,14 @@
     box-sizing: border-box;
 }
 
+html,
 body {
-    margin: 0;
     height: 100%;
-    background-image: url("assets/images/background.png");
+}
+body {
+    height: 100%;
+    margin: 0;
+    background-image: url("assets/images/background-720p.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -86,7 +90,8 @@ h6 {
     padding: 160px 175px;
 }
 
-#track, #songProgress {
+#track,
+#songProgress {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -150,7 +155,6 @@ h6 {
     font-weight: bold;
     color: #fff;
     text-shadow: 6px 6px 4px #000;
-    text-transform: uppercase;
     opacity: 0;
 }
 
@@ -160,6 +164,5 @@ h6 {
     font-weight: 400;
     color: #fff;
     text-shadow: 3px 3px 2px #000;
-    text-transform: uppercase;
     opacity: 0;
 }

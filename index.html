@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/bootstrap.css">
     <title>Anime Radio</title>
   </head>
   <body>
@@ -30,7 +31,13 @@
           <h2 id="track-title">???</h2>
         </div>
       </div>
-      <progress id="songProgress" value="0" max="100"></progress>
+      <div class="col-xs-12">
+        <div hidden class="progress" style="background-color:#1b1b1b;">
+          <div class="progress-bar" id="songProgress" role="progressbar"
+            style="width: 0;"></div>
+        </div>
+      </div>
+
     </div>
     <script type="module"
       src="./src/main.js"></script>

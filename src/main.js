@@ -92,11 +92,14 @@ source.connect(audioCtx.destination);
 const albumArt = document.querySelector("#album-art");
 const trackArtist = document.querySelector("#track-artist");
 const trackTitle = document.querySelector("#track-title");
+const progressBar = document.querySelector(".progress");
 audio.addEventListener("play", () => {
     drawIntro();
     albumArt.style.animation = "0.5s ease-in-out 0.25s revealSideways forwards";
     trackArtist.style.animation = "2s ease-in-out 0.5s fadeIn forwards";
     trackTitle.style.animation = "2s ease-in-out 0.75s fadeIn forwards";
+    progressBar.style.animation = "2s ease-in-out 0.75s fadeIn forwards";
+    progressBar.hidden = false;
 });
 audio.volume = 0.25;
 const updateVisualizerSize = () => {
