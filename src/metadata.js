@@ -64,7 +64,7 @@ const updateTrackInfo = async () => {
     const totalDuration = data.main.end_time - data.main.start_time;
     const remaining = data.main.end_time - Date.now() / 1000;
 
-    const playedFor = totalDuration - remaining;
+    const playedFor = totalDuration - remaining - 5; // adding 5 more seconds due to latency
     progressBarNode.style.width = `${(playedFor / totalDuration) * 100}%`; //prettier-ignore
 };
 document.onload = updateTrackInfo;
